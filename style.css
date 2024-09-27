@@ -1,0 +1,139 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: Lato, sans-serif;
+    font-size: 19px;
+    display: flex;
+    justify-content: center;
+    color: #4f546c;
+    background-color: rgb(243, 248, 254);
+}
+
+.container {
+    width: 1080px;
+    margin-top: 50px;
+    padding: 50px;
+    display: flex;
+    flex-direction: column; /* Items stacked vertically */
+    align-items: center; /* Center items horizontally */
+    background: #FFFFFF;
+    box-shadow: 0 20px 50px -20px rgba(167,186,211, 0.6);
+    border-radius: 5px;
+}
+
+.header {
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+h1{
+    margin-bottom: 15px;
+}
+
+h2 {
+    font-size: 22px;
+    font-weight: 400;
+}
+
+.row {
+	margin-bottom: 25px;
+}
+
+table {
+    border-collapse: collapse;
+    box-shadow: 0px 8px 24px #a7bad3;
+    background-color: white;
+    text-align: left;
+    width: 100%;
+    margin-bottom: 50px;
+}
+
+th {
+    background-color: #d0def2;
+    padding: 0.75rem 2rem;
+    text-transform: uppercase;
+    letter-spacing: 0.1rem;
+    font-size: 0.7rem;
+    font-weight: 900;
+}
+
+td {
+    padding: 1rem 2rem;
+}
+
+tr:nth-child(even) {
+    background-color: #f3f8fe;
+}
+
+input[type="text"],
+input[type="number"]  {
+    font: inherit;
+    color: #4f546c;
+    padding: 0.75rem;
+    font-size: 1.2rem;
+    width: 320px;    
+    border: 1px solid #a7bad3;
+}
+
+input.error {
+	border: 1px solid rgba(238, 82, 83, 0.2);
+	background: rgba(238, 82, 83, 0.08);
+}
+
+label {
+	display: inline-block;
+	width: 100px;
+	text-align: right;
+	margin-right: 10px;
+}
+
+button {
+    display: inline-block;
+    font-weight: 400;
+    text-align: center;
+    white-space: nowrap;
+    vertical-align: middle;
+    border: 1px solid transparent;
+    padding: .375rem .75rem;
+    font-size: 16px;
+    line-height: 1.5;
+    border-radius: .25rem;
+    transition: color .15s ease-in-out,background-color .15s ease-in-out,border-color .15s ease-in-out,box-shadow .15s ease-in-out;
+    color: #fff;
+    background-color: #007bff;
+    border-color: #007bff;
+    cursor: pointer;
+}
+
+button#clear {
+    background: #dc3545;
+    border-color: #dc3545;
+    margin-left: 15px;
+}
+
+#form button {
+    margin-left: 110px;
+}
+
+span.error {
+	display: block;
+	color: #ee5253;
+	font-size: 17px;
+	margin-left: 115px;
+	margin-top: 5px;
+}
+
+#msg {    
+    padding: 5px 8px 7px;
+    border-radius: 2px;
+    font-size: 17px;    
+    background: #cff4fc;
+    border: 1px solid #9eeaf9;
+    margin-bottom: 20px;
+    display: none;
+}
